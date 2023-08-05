@@ -92,3 +92,9 @@ export const data = [
     date: "25 November, 2023 ",
   },
 ];
+
+export const name = [
+  { Coaching: "Services" },
+  { Coaching: "Shop Now" },
+  { Coaching: "Contact Us" },
+];
