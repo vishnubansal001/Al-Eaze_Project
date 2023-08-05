@@ -1,14 +1,15 @@
 import React from 'react';
-import SignupForm from './pages/signUpForm';
-import LoginForm from './pages/loginForm';
+import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
+import Landing from './pages/landing';
+import Restaurant from'./pages/resto';
+import Recipe from './pages/singleRecipe';
+
 
 const App = () => {
   return (
     <div>
-      <h1>Signup</h1>
-      <SignupForm />
-      <h1>Login</h1>
-      <LoginForm />
+      {/* <Landing/> */}
+      <Recipe/>
     </div>
   );
 };
