@@ -6,6 +6,7 @@ import Products from "./pages/Products";
 import Navbar from "./components/NavBar";
 import Blogs from "./pages/Blogs";
 import SingleBlogPage from "./pages/SingleBlogPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route exact path="/blogs" element={<Blogs />}></Route>
         <Route exact path="/blogs-single" element={<SingleBlogPage />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
