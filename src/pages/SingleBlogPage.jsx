@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TopicImg from "../images/TopicImg.png";
+import { useParams } from "react-router-dom";
+import { dataBlogs } from "../database/database";
 
 export default function SingleBlogPage() {
+  const [data, setData] = useState(null);
+  const params = useParams();
+
+  useEffect(() => {
+    setData(dataBlogs[params.blogId - 1]);
+  }, []);
   return (
     <>
       <div className="wrapper-single">
         <div className="">
-          <img src={TopicImg} alt="" />
+          <img src={data?.img} alt="" />
           <div className="">
-            <div className="blog-title-single">
-              Is it celiac disease or a wheat allergy?
-            </div>
+            <div className="blog-title-single">{data?.title}</div>
 
-            <div className="blog-single-text">DECEMBER 2, 2021</div>
+            <div className="blog-single-text">{data?.date}</div>
 
             <div className="blog-single-text">
               If you get stomach cramps and feel bloated after eating a sandwich

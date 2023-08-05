@@ -69,7 +69,7 @@ export const products1 = [
   },
 ];
 
-export const data = [
+export const dataBlogs = [
   {
     img: img1,
     header: "Is it celiac disease or a wheat allergy?",
