@@ -1,7 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 export const ReviewBox = (props) => {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        onClick={() => {
+          navigate(`/blogs-single/${props.ind + 1}`);
+        }}
+      >
         <div className="img-container">
           <img src={props.img} className="img" alt="name" />
         </div>
@@ -15,4 +23,4 @@ export const ReviewBox = (props) => {
       </div>
     </>
   );
-}
+};

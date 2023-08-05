@@ -21,10 +21,8 @@ const App = () => {
         <Route exact path="/products" element={<Products />}></Route>
         <Route exact path="/blogs" element={<Blogs />}></Route>
         <Route exact path="/blogs-single" element={<SingleBlogPage />}></Route>
-        <Route exact path="/recipe" element={<Recipe />}></Route>
-        <Route exact path="/recipe-poha" element={<SingleRecipe />}></Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 };

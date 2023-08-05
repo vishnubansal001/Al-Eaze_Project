@@ -1,6 +1,6 @@
 import React from "react";
 import { ReviewBox } from "../components/ReviewBox";
-import { data } from "../database/database";
+import { dataBlogs } from "../database/database";
 import HeaderImg from "../images/header.png";
 
 export default function Blogs() {
@@ -29,10 +29,12 @@ export default function Blogs() {
 
       <div className="blog-box">
         <div className="Between blog">
-          {data.map((e) => {
+          {dataBlogs.map((e,index) => {
+            // console.log(index);
             return (
               <ReviewBox
                 img={e.img}
+                ind={index}
                 header={e.header}
                 Date={e.date}
                 review={e.review}
