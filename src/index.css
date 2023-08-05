@@ -238,6 +238,44 @@ code {
   row-gap: 3rem;
 }
 
+.wrapper-single {
+  /* display: grid; */
+  /* padding-top: 8rem; */
+  /* grid-template-columns: repeat(12, minmax(0, 1fr)); */
+  width: 100%;
+  background: #e3f6ff;
+}
+
+
+.wrapper-single div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper-single div img{
+  width: 100%;
+}
+
+.wrapper-single div:nth-child(2) div {
+  display: flex;
+  padding-top: 4rem;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.blog-title-single {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #619eb8;
+}
+
+.blog-single-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
 @media (min-width: 640px) {
   .img-box img {
     display: none;
