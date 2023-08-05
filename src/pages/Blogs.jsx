@@ -9,7 +9,7 @@ export default function Blogs() {
       <div className="Header blogs-wrapper">
         <div className="blogs-container">
           <h1 className="t1">
-            Al-Eaze
+            AL-Eaze
           </h1>
           <div className="blog-title">
             <p>Read about the facts and truths about food allergies</p>

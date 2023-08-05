@@ -7,6 +7,9 @@ import Navbar from "./components/NavBar";
 import Blogs from "./pages/Blogs";
 import SingleBlogPage from "./pages/SingleBlogPage";
 import Footer from "./components/Footer";
+import Recipe from "./pages/Recipes";
+import SingleRecipe from "./pages/SingleRecipes";
+
 
 const App = () => {
   return (
@@ -18,6 +21,8 @@ const App = () => {
         <Route exact path="/products" element={<Products />}></Route>
         <Route exact path="/blogs" element={<Blogs />}></Route>
         <Route exact path="/blogs-single" element={<SingleBlogPage />}></Route>
+        <Route exact path="/recipe" element={<Recipe />}></Route>
+        <Route exact path="/recipe-poha" element={<SingleRecipe />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

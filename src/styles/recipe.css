@@ -1,13 +1,15 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*/
 
-body{
+.Body{
     background-color: #f9fffe;
-    font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, #9df1df, #8dcbe6);}
+    /* font-family: 'Poppins', sans-serif; */
+    background-image: linear-gradient(to right, #9df1df, #8dcbe6);
+} 
 
 .heroDiv{
     height: 80vh;

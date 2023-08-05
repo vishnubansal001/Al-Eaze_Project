@@ -2,7 +2,8 @@
     text-align: left;
 }
 
-body{
+.body{
+  
     background-color: #E3F6FF;
     background-image: url("../images/bg2.png");
     /* background-size:contain; */
@@ -12,16 +13,18 @@ body{
   }
   
   .main{
+    padding-top: 80px;
     font-size: 50px;
     font-weight: 900;
     margin-left: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .para{
     width: 800px;
     margin-left: 100px;
     margin-bottom: 20px;
     font-size: 25px;
+    font-family: 'Montserrat';
   }
   .vid{
     margin-left: 100px;
@@ -48,7 +51,7 @@ body{
     margin-top: 30px;
     
   }
-  li{
+  ul .lis{
     list-style-type: circle;
     margin-bottom: 20px;
     font-size: 25px;

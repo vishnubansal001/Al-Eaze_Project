@@ -4,7 +4,7 @@ import shop from '../images/shop.png';
 
 export default function Products() {
   return (
-    <section className="content-wrapper">
+    <section style={{paddingTop:"130px"}} className="content-wrapper">
       <div className="content-head">
         <h1>ai-eaze recommendations</h1>
         {/* <div></div> */}

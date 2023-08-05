@@ -67,6 +67,7 @@ body{
   padding-left: 20px;
   font-weight: bolder;
   width: 50%;
+  text-align: left;
 }
 .allergy{
   color: #e1f5ff;
@@ -113,7 +114,7 @@ span{
   background-color: #f5f5f5f5;
   border-radius: 20px;
   position: relative;
-  bottom: 130px;
+  bottom: 80px;
 }
 
 .comImg{
@@ -137,9 +138,10 @@ span{
   /* background-color: black; */
   text-align: center;
   font-size: 30px;
-  margin-left: 200px;
+  margin-left: 370px;
   margin-top: 30px;
   font-family: 'Montserrat';
+  border-radius: 1rem 0 1rem 0;
 }
 .btn:hover{
   background-color: black;
@@ -151,7 +153,7 @@ span{
   background-color: #303030;
   border-radius: 20px;
   position: relative;
-  bottom: 300px;
+  bottom: 200px;
   padding: 20px
 }
 .sixth-container{
@@ -162,10 +164,7 @@ span{
   position: relative;
   bottom: 400px;  
 }
-/* swiper {
-  width: 100%;
-  height: 100%;
-} */
+
 
 .swiper-slide {
   text-align: center;
@@ -175,14 +174,7 @@ span{
   justify-content: center;
   align-items: center;
 }
-/*
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-*/
+
 .swiper {
   width: 100%;
   height: 300px;
@@ -190,24 +182,6 @@ span{
   position: relative;
   top: 100px;
 }
-/* .append-buttons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.append-buttons button {
-  display: inline-block;
-  cursor: pointer;
-  border: 1px solid #007aff;
-  color: #007aff;
-  text-decoration: none;
-  padding: 4px 10px;
-  border-radius: 4px;
-  margin: 0 10px;
-  font-size: 13px;
-} */
- 
-/* slider css */
 
 .firstBlog{
     background-image: url("../images/WheatImg.jpg");
@@ -224,4 +198,28 @@ span{
 .forthblog{
     background-image: url("../images/soy.jpeg");
     background-size: cover;
+}
+
+.Head{
+  font-size: 30px;
+  color: #303030;
+  background-color: #8DCBE6;
+  
+}
+
+.des{
+  background-color: #303030;
+  color: #8DCBE6;
+}
+.blogs{
+  font-family: 'poppins';
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 70px;
+  margin-left: 50px;
+  color: #e1f5ff;
+}
+.blogDes{
+  position: relative;
+  top: 170px;
 }
