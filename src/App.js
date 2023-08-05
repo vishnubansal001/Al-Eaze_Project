@@ -1,16 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import Landing from './pages/landing';
-import Restaurant from'./pages/resto';
-import Recipe from './pages/singleRecipe';
-
+import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Restorant from "./pages/Restorant";
+import Products from "./pages/Products";
 
 const App = () => {
   return (
-    <div>
-      {/* <Landing/> */}
-      <Recipe/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<LandingPage />}></Route>
+        <Route exact path="/restorant" element={<Restorant />}></Route>
+        <Route exact path="/products" element={<Products />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
