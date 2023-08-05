@@ -33,7 +33,12 @@ body {
   align-items: center;
   cursor: pointer;
 }
-
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  border-radius:0 0 10px 10px;
+}
 .content {
   padding: 20px;
 }
