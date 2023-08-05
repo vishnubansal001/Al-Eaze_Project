@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillYoutube } from "react-icons/ai";
-import Logoimg from "../images/logo.png";
+import Logoimg from "../images/Logo.png";
 import { Services } from "./Services";
 import { name } from "../database/database";
 
