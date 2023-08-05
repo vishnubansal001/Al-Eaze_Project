@@ -11,3 +11,146 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e3f6ff;
+}
+
+.content-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-head h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.content-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content-btns button {
+  padding-top: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: medium;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #8dcbe6;
+  box-shadow: 1px 1px 5px rgb(101, 100, 100);
+  cursor: pointer;
+}
+
+.content-container {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 4rem;
+  padding-top: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: #9df1df;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card div:nth-child(1) {
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.card div:nth-child(2) h2 {
+  margin-block-start: 0.3em;
+  margin-block-end: 0em;
+  font-weight: 400;
+}
+
+.card div:nth-child(2) p {
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+  font-weight: 400;
+}
+
+.card div:nth-child(2) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  gap: 1rem;
+  background-color: #619eb8;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card div:nth-child(2) a p {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+.pointing{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+  .content-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .content-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content-head h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-head {
+    flex-direction: column;
+  }
+  .content-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .content-head h1 {
+    font-size: large;
+  }
+}
