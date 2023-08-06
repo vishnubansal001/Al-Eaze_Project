@@ -35,7 +35,7 @@ body{
   background-color: #303030;
   border-radius: 20px 20px 0 0;
   position: relative;
-  /* bottom: 10px; */
+  bottom: -20px;
   
 }
 .third-container{
@@ -47,7 +47,7 @@ body{
   position: relative;
   bottom: 60px;
 }
-.main{
+.mainH{
   font-size: 65px;
   /* padding-top: 20px;
   padding-left: 10px; */
@@ -57,7 +57,7 @@ body{
   font-family: 'Montserrat';
   font-weight: bold;
 }
-.sec-main{
+.sec-para{
   font-family: 'poppins' ;
   font-size: 25px;
   padding: 20px;

@@ -9,6 +9,8 @@ import SingleBlogPage from "./pages/SingleBlogPage";
 import Footer from "./components/Footer";
 import Recipe from "./pages/Recipes";
 import SingleRecipe from "./pages/SingleRecipes";
+import Doctor from "./pages/Doctors";
+import Community from "./pages/Community";
 
 
 const App = () => {
@@ -17,12 +19,17 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<LandingPage />}></Route>
-        <Route exact path="/restorant" element={<Restorant />}></Route>
+        <Route exact path="/restaurant" element={<Restorant />}></Route>
         <Route exact path="/products" element={<Products />}></Route>
         <Route exact path="/blogs" element={<Blogs />}></Route>
         <Route exact path="/blogs-single" element={<SingleBlogPage />}></Route>
+        <Route exact path="/recipe" element={<Recipe />}></Route>
+        <Route exact path="/recipe-poha" element={<SingleRecipe />}></Route>
+        <Route exact path="/wheat-allergy" element={<SingleBlogPage />}></Route>
+        <Route exact path="/consultants" element={<Doctor />}></Route>
+        <Route exact path="/community" element={<Community />}></Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 };

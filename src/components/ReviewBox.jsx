@@ -7,7 +7,7 @@ export const ReviewBox = (props) => {
       <div
         className="wrapper"
         onClick={() => {
-          navigate(`/blogs-single/${props.ind + 1}`);
+          navigate(`/wheat-allergy/${props.ind + 1}`);
         }}
       >
         <div className="img-container">

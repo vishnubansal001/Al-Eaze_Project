@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "../styles/landing.css";
 // import NavBar from '../components/NavBar';
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,8 +22,8 @@ function LandingPage() {
   return (
     <div className="App">
       <div>
-        <Marquee style={{position:"relative", top:"100px",}} className="marquee">
-          <p onClick={() => {navigate('/products')}} className="pointing">al-eaze</p>
+        <Marquee style={{position:"relative", top:"110px", fontSize:"20px"}} className="marquee" >
+          <p onClick={() => {navigate('/products')}} className="pointing">Empowering Allergy Awareness and Relief for a Healthier Life. AL-Eaze Recommends</p>
         </Marquee>
       </div>
       {/* <NavBar /> */}
@@ -33,8 +34,8 @@ function LandingPage() {
             src={require("../images/1906.i203.016.allergy_symptoms-removebg-preview.png")}
             alt=""
           />
-          <p className="main">Allergies won't limit you here! </p>
-          <p className="sec-main">
+          <p className="mainH">Allergies won't limit you here! </p>
+          <p className="sec-para" style={{fontWeight:"lighter"}}>
             Navigating life with food allergies may seem challenging, but it can
             be empowering with the right approach. From education and
             preparation to finding support and savoring new culinary
@@ -79,11 +80,11 @@ function LandingPage() {
           >
             <Card
               imgSrc={require("../images/restaurantLand.jpg")}
-              imgAlt="Card Image"
+              imgAlt="restaurant"
               title="Explore Restaurants"
               description="Discover even more convenience with our extensive list of allergy-friendly restaurants!"
               buttonText="See more"
-              link="/restorant"
+              link="/restaurant"
               initial={{ x: -40 }}
               whileInView={{ x: 0 }}
             />
@@ -95,7 +96,7 @@ function LandingPage() {
           >
             <Card 
             imgSrc={require("../images/RecipesLand.jpg")}
-            imgAlt="Card Image"
+            imgAlt="recipe"
             title="Explore Recipes"
             description="Discover allergy-friendly recipes and meal plans designed to accommodate various dietary needs."
             buttonText="See more"
@@ -109,11 +110,11 @@ function LandingPage() {
           >
             <Card 
             imgSrc={require("../images/DoctorsLand.jpg")}
-            imgAlt="Card Image"
+            imgAlt="consultant"
             title="Consultants"
             description="Get expert advice from allergists and healthcare professionals through our Ask-an-Expert section!"
             buttonText="See more"
-            link="/restorant"
+            link="/consultants"
             />
           </motion.div>
         </div>
@@ -141,7 +142,7 @@ function LandingPage() {
             public spaces.
           </p>
         </div>
-        <div className="btn">Learn more</div>
+        <div  className="btn"><Link to="/community">Learn more</Link></div>
       </motion.div>
       <motion.div
         initial={{ y: 100 }}
@@ -159,7 +160,7 @@ function LandingPage() {
           modules={[Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide className='firstBlog'><div className='blogDes'><p className='Head'>Is it celiac disease or a wheat allergy?</p>
+          <SwiperSlide className='firstBlog'><div className='blogDes'><p onClick={() => {navigate('/blogs-single')}} className="Head">Is it celiac disease or a wheat allergy?</p>
         <p className='des'>If you get stomach cramps and feel bloated after eating a sandwich on wheat bread or a bowl of pasta, do you have celiac disease? A wheat allergy? Or neither?...</p></div></SwiperSlide>
         <SwiperSlide className='secondBlog'><div className='blogDes' style={{position:"relative",top:"185px"}}><p className='Head'>Foods High in Lactose</p>
         <p className='des'>Around 75% of the world’s population has some form of lactose intolerance. Some can digest low-lactose diets, while others experience digestive symptoms after eating any amount of dairy. </p></div></SwiperSlide>

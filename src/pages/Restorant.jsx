@@ -6,9 +6,8 @@ const Restorant = () => {
     <div className="App-header">
       {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
-      <h2 className="mr-4 text-center">
-        find allergy-friendly, gluten-free restaurants in and around New Delhi
-        and Mumbai
+      <h2 className="mr-4 text-center" style={{marginTop:"100px" , color:"white", textAlign:"center"}}>
+        AL-Eaze Eats
       </h2>
       <br></br>
       <br></br>

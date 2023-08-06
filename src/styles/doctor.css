@@ -1,0 +1,131 @@
+/* *::selection{
+    background:var(--orange);
+    color:#fff;
+  }
+   */
+ 
+  
+  section{
+    padding:2rem 9%;
+   
+  }
+  
+  .heading{
+    text-transform: capitalize;
+    text-align: center;
+    padding:2.5rem 0
+  }
+  
+  .heading span{
+    font-size: 3.5rem;
+    background:rgba(9, 31, 84, 0.895);
+    color:rgb(255, 255, 255);
+    border-radius: .5rem;
+    padding:.2rem 1rem;
+  }
+  
+  .heading span.space{
+    background:none;
+  }
+  .btn2{
+    display: inline-block;
+    margin-top: 1rem;
+    background:#04365f;
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--blue);
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .btn2:hover{
+    background:rgba(125, 205, 242, 0.2);
+    color:#222;
+  }
+    
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+    /* font-family: 'Nunito', sans-serif; */
+    margin:0; padding:0;
+    box-sizing: border-box;
+   
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+  }
+  
+  .home .content{
+    text-align:center;
+  }
+  
+  .home .content h3{
+    font-size: 4.5rem;
+    color:#190459;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+  }
+  
+  .home .content p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color:#fff;
+    
+  }
+  
+  .home .imgdoc-container img{
+    background-attachment:scroll ;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:120%;
+    object-fit: cover;
+  }
+  .home .imgdoc-container1 img{
+    background-attachment:scroll ;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 450px;
+    width:100%;
+    object-fit: cover;
+  }
+  .doc{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .doc1 .box{
+    height:400px;
+    width:250px;
+    background-color:rgba(255, 255, 255, 0.795);
+    margin: 50px;
+   text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.459);
+    
+  }
+  
+  .doc1 .box img{
+    height:350px;
+    width:250px;
+    
+    
+   
+  }
+  
+  .doc1 .box h3{
+    color:rgb(29, 28, 28);
+    font-size: 20px;
+  }
